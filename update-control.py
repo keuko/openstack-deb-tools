@@ -39,32 +39,23 @@ class Package:
 
 
 
-from deb_pkg_tools import control
-control_file = "{}/debian/control".format(pwd)
-a = control.load_control_file(control_file)
-print(control.parse_depends())
-print(a)
 
+req_file = "{}/test/requirements.txt".format(pwd)
+test_req_file = "{}/test-requirements".format(pwd)
 
+reqs = []
+with open(req_file, 'r') as fd:
+    for req in requirements.parse(fd):
+        reqs.append(req.name)
+        #print(req.name, req.specs)
 
+py2_file = '/usr/share/dh-python/dist/cpython2_fallback'
+py3_file = '/usr/share/dh-python/dist/cpython3_fallback'
 
-
-# req_file = "{}/requirements.txt".format(pwd)
-# test_req_file = "{}/test-requirements".format(pwd)
-#
-# reqs = []
-# with open(req_file, 'r') as fd:
-#     for req in requirements.parse(fd):
-#         reqs.append(req.name)
-#         #print(req.name, req.specs)
-#
-# py2_file = '/usr/share/dh-python/dist/cpython2_fallback'
-# py3_file = '/usr/share/dh-python/dist/cpython3_fallback'
-#
-# for package in reqs:
-#     p = Package(package)
-#     print(p.getPy2DebPkgName())
-#     print(p.getPy3DebPkgName())
+for package in reqs:
+    p = Package(package)
+    print(p.getPy2DebPkgName())
+    print(p.getPy3DebPkgName())
 
 
 
