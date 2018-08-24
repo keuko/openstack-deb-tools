@@ -1,0 +1,481 @@
+Pillow
+alembic  # MIT
+abclient  # Apache-2.0
+amqp!=2.1.4  # BSD
+ansible-runner  # Apache 2.0
+anyjson  # BSD
+appdirs  # MIT License
+apscheduler  # MIT License
+autobahn  # MIT License
+automaton  # Apache-2.0
+beautifulsoup4  # MIT
+Babel!=2.4.0  # BSD
+bcrypt  # Apache-2.0
+betamax  # Apache-2.0
+betamax-matchers  # Apache-2.0
+boto  # MIT
+botocore  # Apache-2.0
+cassandra-driver!=3.6.0  # Apache-2.0
+castellan  # Apache-2.0
+ceilometermiddleware  # Apache-2.0
+cachetools  # MIT License
+cffi  # MIT
+cliff!=2.9.0  # Apache-2.0
+cmd2!=0.8.3,<0.9.0;python_version<'3.0'  # MIT
+cmd2!=0.8.3;python_version>='3.0'  # MIT
+cotyledon  # Apache-2.0
+construct<2.9  # MIT
+PuLP  # MIT
+contextlib2;python_version<'3.0'  # PSF License
+croniter  # MIT License
+cryptography!=2.0  # BSD/Apache-2.0
+cursive  # Apache-2.0
+ddt  # MIT
+debtcollector  # Apache-2.0
+decorator  # BSD
+defusedxml  # PSF
+dib-utils  # Apache-2.0
+diskimage-builder!=1.6.0,!=1.7.0,!=1.7.1  # Apache-2.0
+distro  # Apache-2.0
+Django<2;python_version<'3.0'  # BSD
+Django<2.1;python_version>='3.0'  # BSD
+django-babel  # BSD
+django-compressor  # MIT
+django-floppyforms<2  # BSD
+django-formtools  # BSD
+dnspython;python_version=='2.7'  # http://www.dnspython.org/LICENSE
+dnspython3!=1.13.0,!=1.14.0;python_version>='3.0'  # http://www.dnspython.org/LICENSE
+# Note(tonyb): We don't actually directly depend on docutils but we pull it in
+# indirectly and we needed to blacklist 0.13.1 for problems with
+# Sphinx 1.3. This can be now removed once all projects removed it.
+docutils  # OSI-Approved Open Source, Public Domain
+dogpile.cache  # BSD
+dogtag-pki  # LGPLv3+
+dulwich!=0.19.3  # Apache-2.0
+elasticsearch<=3.0.0  # Apache-2.0
+enum34;python_version=='2.7' or python_version=='2.6' or python_version=='3.3'  # BSD
+# NOTE: New versions of eventlet should not be accepted lightly
+# as they have earned a reputation of frequently breaking things.
+eventlet!=0.18.3,!=0.20.1,!=0.21.0,!=0.23.0  # MIT
+exabgp!=4.0.6  # BSD
+extras  # MIT
+faker  # MIT
+falcon  # Apache-2.0
+Flask!=0.11  # BSD
+flask-keystone  # Apache-2.0
+flask-oslolog  # Apache-2.0
+Flask-RESTful  # BSD
+Flask-SQLAlchemy  # BSD
+fortiosclient  # Apache-2.0
+futures;python_version=='2.7' or python_version=='2.6'  # PSF
+futurist  # Apache-2.0
+funcsigs;python_version=='2.7' or python_version=='2.6'  # Apache-2.0
+glance-store  # Apache-2.0
+google-api-python-client  # Apache-2.0
+graphviz!=0.5.0  # MIT License
+greenlet!=0.4.14  # MIT
+GitPython  # BSD License (3 clause)
+gunicorn  # MIT
+happybase!=0.7,!=1.0.0;python_version=='2.7'  # MIT
+heat-translator  # Apache-2.0
+horizon  # Apache-2.0
+httplib2  # MIT
+icalendar  # BSD
+influxdb!=5.2.0  # MIT
+instack-undercloud  # Apache-2.0
+ironic-lib  # Apache-2.0
+ipaddress;python_version<'3.3'  # PSF
+iso8601  # MIT
+jira  # BSD License (2 clause)
+Jinja2  # BSD License (3 clause)
+jmespath  # MIT
+jsonmodels  # BSD License (3 clause)
+jsonpatch!=1.20  # BSD
+jsonpath-rw<2.0  # Apache-2.0
+jsonpath-rw-ext  # Apache-2.0
+jsonschema<3.0.0  # MIT
+kazoo  # Apache-2.0
+keystoneauth1  # Apache-2.0
+keystonemiddleware  # Apache-2.0
+krest  # Apache-2.0
+kubernetes  # Apache-2.0
+kuryr-lib  # Apache-2.0
+packaging  # Apache-2.0
+pylev  # BSD
+pypowervm  # Apache-2.0
+pyScss!=1.3.5  # MIT License
+django-pyscss  # BSD License (2 clause)
+kombu!=4.0.2  # BSD
+ldap3  # LGPLv3
+deprecation  # Apache-2.0
+libvirt-python!=4.1.0,!=4.2.0  # LGPLv2+
+lxml!=3.7.0  # BSD
+Mako  # MIT
+marathon!=0.9.1  # MIT
+metalsmith  # Apache-2.0
+microversion-parse  # Apache-2.0
+mistral-lib  # Apache-2.0
+monasca-common  # Apache-2.0
+monasca-statsd  # Apache-2.0
+monotonic  # Apache-2.0
+msgpack  # Apache-2.0
+munch  # MIT
+murano-pkg-check  # Apache-2.0
+mypy;python_version>='3.4'  # MIT
+ndg-httpsclient;python_version<'3.0'  # BSD
+netaddr  # BSD
+netifaces!=0.10.0,!=0.10.1  # MIT
+netmiko  # MIT
+networking-bagpipe  # Apache-2.0
+networking-bgpvpn  # Apache-2.0
+networking-l2gw  # Apache-2.0
+networking-odl  # Apache-2.0
+networking-sfc  # Apache-2.0
+# Pinned to 1.0 branch until projects update, see:
+#  https://bugs.launchpad.net/openstack-requirements/+bug/1718576
+networkx  # BSD
+neutron-lib  # Apache-2.0
+neutron-dynamic-routing  # Apache-2.0
+neutron-fwaas  # Apache-2.0
+neutron-lbaas  # Apache-2.0
+neutron-vpnaas  # Apache-2.0
+neutron  # Apache-2.0
+notifier  # Apache-2.0
+oauth2client!=4.0.0  # Apache-2.0
+oauthlib  # BSD
+openshift  # Apache-2.0
+openstackdocstheme  # Apache-2.0
+osc-lib  # Apache-2.0
+osc-placement  # Apache-2.0
+oslo.cache  # Apache-2.0
+oslo.config!=4.3.0,!=4.4.0  # Apache-2.0
+oslo.concurrency  # Apache-2.0
+oslo.context  # Apache-2.0
+oslo.db  # Apache-2.0
+oslo.i18n  # Apache-2.0
+oslo.log  # Apache-2.0
+oslo.messaging  # Apache-2.0
+oslo.middleware  # Apache-2.0
+oslo.policy  # Apache-2.0
+oslo.privsep  # Apache-2.0
+oslo.reports  # Apache-2.0
+oslo.rootwrap  # Apache-2.0
+# NOTE(mriedem): oslo.serialization 2.19.1 is blocked for bug 1593641
+oslo.serialization!=2.19.1  # Apache-2.0
+oslo.service!=1.28.1  # Apache-2.0
+oslo.utils  # Apache-2.0
+oslo.vmware  # Apache-2.0
+oslo.versionedobjects  # Apache-2.0
+osprofiler  # Apache-2.0
+os-apply-config  # Apache-2.0
+os-brick  # Apache-2.0
+os-client-config  # Apache-2.0
+os-collect-config  # Apache-2.0
+os-dpm  # Apache-2.0
+os-net-config  # Apache-2.0
+os-refresh-config  # Apache-2.0
+os-service-types  # Apache-2.0
+os-testr  # Apache-2.0
+os-traits  # Apache-2.0
+os-vif!=1.8.0  # Apache-2.0
+ovs  # Apache-2.0
+os-win  # Apache-2.0
+os-xenapi  # Apache-2.0
+paramiko  # LGPLv2.1+
+Parsley  # MIT
+pathlib2  # MIT
+passlib  # BSD
+Paste  # MIT
+PasteDeploy  # MIT
+paunch  # Apache-2.0
+pbr!=2.1.0  # Apache-2.0
+pecan!=1.0.2,!=1.0.3,!=1.0.4,!=1.2  # BSD
+pexpect!=3.3  # ISC License
+pifpaf  # Apache-2.0
+pika  # BSD
+Pillow  # PIL License
+Pint  # BSD
+pip  # MIT
+PrettyTable<0.8  # BSD
+psutil  # BSD
+pyasn1!=0.2.3  # BSD
+pyasn1-modules  # BSD
+pycadf!=2.0.0  # Apache-2.0
+PyECLib  # BSD
+pyghmi  # Apache-2.0
+pyinotify;sys_platform!='win32' and sys_platform!='darwin' and sys_platform!='sunos5'  # MIT
+PyJWT  # MIT
+pykafka  # Apache 2.0 License
+pykmip  # Apache 2.0 License
+python-ldap  # PSF
+pylxd  # Apache-2.0
+pymemcache!=1.3.0  # Apache 2.0 License
+pymongo!=3.1  # Apache-2.0
+PyMySQL  # MIT License
+python-etcd  # MIT License
+tap-as-a-service  # Apache-2.0
+etcd3  # Apache-2.0
+etcd3gw!=0.2.2,!=0.2.3  # Apache-2.0
+typing  # PSF
+voluptuous  # BSD License
+pydot  # MIT License
+pydotplus  # MIT License
+crc16  # LGPLv3+
+pyzabbix  # LGPL
+statsd  # MIT
+weakrefmethod;python_version=='2.7'  # PSF
+zVMCloudConnector;sys_platform!='win32'  # Apache 2.0 License
+opentracing  # Apache-2.0
+jaeger-client  # Apache-2.0
+
+# NOTE(flaper87): This added 2 packages to `integration.sh`
+# uuid-dev and swig
+pyngus  # Apache-2.0
+
+pyOpenSSL  # Apache-2.0
+pyparsing  # MIT
+pyroute2;sys_platform!='win32'  # Apache-2.0 (+ dual licensed GPL2)
+pysnmp  # BSD
+pystache  # MIT
+pysaml2!=4.0.3,!=4.0.4,!=4.0.5,!=4.0.5rc1,!=4.1.0,!=4.2.0,!=4.3.0,!=4.4.0  # Apache-2.0
+
+# OpenStack clients. None of these should have an upper bound
+# as that has implications for testing in the gate.
+aodhclient  # Apache-2.0
+gnocchiclient  # Apache-2.0
+tricircleclient  # Apache-2.0
+python-barbicanclient  # Apache-2.0
+python-blazarclient  # Apache-2.0
+python-ceilometerclient  # Apache-2.0
+python-cinderclient!=4.0.0  # Apache-2.0
+python-congressclient<2000  # Apache-2.0
+python-designateclient  # Apache-2.0
+python-freezerclient  # Apache-2.0
+python-heatclient  # Apache-2.0
+python-hnvclient  # Apache-2.0
+python-glanceclient  # Apache-2.0
+python-glareclient  # Apache-2.0
+python-ironic-inspector-client  # Apache-2.0
+python-ironicclient  # Apache-2.0
+python-karborclient  # Apache-2.0
+python-keystoneclient!=2.1.0  # Apache-2.0
+python-kingbirdclient  # Apache-2.0
+python-magnumclient  # Apache-2.0
+python-masakariclient  # Apache-2.0
+python-manilaclient  # Apache-2.0
+python-mistralclient!=3.2.0  # Apache-2.0
+python-muranoclient  # Apache-2.0
+python-monascaclient  # Apache-2.0
+python-neutronclient  # Apache-2.0
+python-novaclient  # Apache-2.0
+python-octaviaclient  # Apache-2.0
+python-openstackclient  # Apache-2.0
+python-qinlingclient  # Apache-2.0
+python-rsdclient  # Apache-2.0
+python-saharaclient  # Apache-2.0
+python-searchlightclient  #Apache-2.0
+python-senlinclient  # Apache-2.0
+python-smaugclient  # Apache-2.0
+python-solumclient  # Apache-2.0
+python-swiftclient  # Apache-2.0
+python-tackerclient  # Apache-2.0
+python-troveclient  # Apache-2.0
+python-vitrageclient  # Apache-2.0
+python-watcherclient  # Apache-2.0
+python-zaqarclient  # Apache-2.0
+python-zunclient  # Apache-2.0
+
+python-magic  # MIT
+python-memcached  # PSF
+python-dateutil  # BSD
+
+# 2013.6 is the first version of pytz that is PEP 440 compatible.
+pytz  # MIT
+pyudev  # LGPLv2.1+
+PyYAML  # MIT
+qpid-python;python_version=='2.7'  # Apache-2.0
+raven  # BSD
+reno  # Apache-2.0
+requests  # Apache-2.0
+requests-aws  # BSD License (3 clause)
+requests-kerberos  # ISC
+requestsexceptions  # Apache-2.0
+rfc3986  # Apache-2.0
+Routes  # MIT
+rtslib-fb  # Apache-2.0
+ryu  # Apache-2.0
+semantic-version  # BSD
+fasteners  # Apache-2.0
+scrypt  # BSD
+simplejson  # MIT
+six  # MIT
+scipy  # BSD
+scikit-learn  # BSD
+# NOTE(yamahata):
+# bug work around of sqlalchemy
+# https://bitbucket.org/zzzeek/sqlalchemy/issues/3952/
+# The fix which is in git master branch is planned for 1.1.9
+SQLAlchemy!=1.1.5,!=1.1.6,!=1.1.7,!=1.1.8  # MIT
+SQLAlchemy-Utils  # BSD License
+sqlalchemy-migrate  # Apache-2.0
+sqlparse  # BSD
+stevedore  # Apache-2.0
+systemd-python  # LGPLv2+
+sysv-ipc  # BSD License
+suds-jurko  # LGPLv3+
+sympy  # BSD
+taskflow  # Apache-2.0
+tempest  # Apache-2.0
+tooz  # Apache-2.0
+tosca-parser  # Apache-2.0
+tripleo-common  # Apache-2.0
+urllib3  # MIT
+unicodecsv;python_version<'3.0'  # BSD
+warlock<2  # Apache-2.0
+WebOb  # MIT
+websocket-client  # LGPLv2+
+websockify  # LGPLv3
+wheel  # MIT
+PyMI;sys_platform=='win32'  # Apache 2.0 License
+wmi;sys_platform=='win32'  # MIT
+WSME  # MIT
+xattr  # MIT
+xstatic-angular-uuid  # MIT License
+xstatic-angular-vis  # MIT License
+xstatic-filesaver  # MIT License
+xstatic-js-yaml  # MIT License
+xstatic-json2yaml  # MIT License
+XenAPI  # LGPL
+XStatic  # MIT License
+XStatic-Angular  # MIT License
+XStatic-Angular-Bootstrap  # MIT License
+XStatic-Angular-Gettext  # MIT License
+XStatic-Angular-lrdragndrop  # MIT License
+XStatic-Angular-Schema-Form  # MIT
+XStatic-angular-ui-router  # MIT
+XStatic-Bootstrap-Datepicker  # Apache 2.0 License
+XStatic-Bootstrap-SCSS  # Apache 2.0 License
+XStatic-bootswatch  # MIT License
+XStatic-D3  # BSD License (3 clause)
+XStatic-Font-Awesome  # SIL OFL 1.1 License, MIT License
+XStatic-Hogan  # Apache 2.0 License
+XStatic-Jasmine  # MIT License
+XStatic-jQuery  # MIT License
+XStatic-JQuery-Migrate  # MIT License
+XStatic-JQuery.quicksearch  # MIT License
+XStatic-JQuery.TableSorter  # MIT License
+XStatic-jquery-ui  # MIT License
+XStatic-JSEncrypt  # MIT License
+XStatic-mdi  # SIL OPEN FONT LICENSE Version 1.1
+XStatic-objectpath  # MIT
+XStatic-Rickshaw  # BSD License (prior)
+XStatic-roboto-fontface  # Apache 2.0 License
+XStatic-smart-table  # MIT License
+XStatic-Spin  # MIT License
+XStatic-term.js  # MIT License
+XStatic-tv4  # MIT
+XStatic-Angular-FileUpload  # MIT License
+yaql  # Apache 2.0 License
+zhmcclient  # Apache 2.0 License
+
+# Testing tools below, which are typically in test-requires.txt
+
+bashate  # Apache-2.0
+couchdb  # Apache-2.0
+coverage!=4.4  # Apache-2.0
+demjson  # GLGPLv3+
+docker  # Apache-2.0
+django-nose  # BSD
+doc8  # Apache-2.0
+Pygments  # BSD license
+fixtures  # Apache-2.0/BSD
+fixtures-git  # Apache-2.0
+freezegun  # Apache-2.0
+gabbi  # Apache-2.0
+kafka-python  # Apache-2.0
+keyring  # MIT/PSF
+ldappool  # MPL
+# Do not make mock conditional on Python version: we depend on newer code than
+# in [most] releases of the Python std library.
+mock  # BSD
+mox  # Apache-2.0
+mox3  # Apache-2.0
+nodeenv  # BSD
+nose  # LGPL
+nose-exclude  # LGPL
+nosehtmloutput  # Apache-2.0
+nosexcover  # BSD
+openstack-doc-tools  # Apache-2.0
+openstack.nose-plugin  # Apache-2.0
+openstacksdk  # Apache-2.0
+os-api-ref  # Apache-2.0
+oslosphinx  # Apache-2.0
+oslotest  # Apache-2.0
+ovsdbapp  # Apache-2.0
+proboscis  # Apache-2.0
+psycopg2  # LGPL/ZPL
+pysendfile  # MIT
+python-consul  # MIT License
+python-subunit  # Apache-2.0/BSD
+python-pytun  # MIT
+pyzmq  # LGPL+BSD
+redis  # MIT
+hiredis  # BSD
+requests-mock  # Apache-2.0
+tenacity  # Apache-2.0
+retrying!=1.3.0  # Apache-2.0
+selenium  # Apache-2.0
+# While setuptools cannot deal with pre-installed incompatible versions,
+# setting a lower bound is not harmful - it makes error messages cleaner. DO
+# NOT set an upper bound on setuptools, as that will lead to uninstallable
+# situations as progressive releases of projects are done.
+# Blacklist setuptools 34.0.0-34.3.2 due to https://github.com/pypa/setuptools/issues/951
+# Blacklist setuptools 36.2.0 due to https://github.com/pypa/setuptools/issues/1086
+setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0  # PSF/ZPL
+sphinx!=1.6.6,!=1.6.7  # BSD
+sphinx-testing  # BSD License
+sphinxcontrib-actdiag  # BSD
+sphinxcontrib-apidoc  # BSD
+sphinxcontrib-blockdiag  # BSD
+sphinxcontrib-httpdomain  # BSD
+sphinxcontrib-nwdiag  # BSD
+sphinxcontrib-seqdiag  # BSD
+sphinxcontrib-pecanwsme  # Apache-2.0
+sphinxcontrib-fulltoc  # Apache-2.0
+sphinx-feature-classification  # Apache-2.0
+sphinxmark  # Apache-2.0
+sphinxcontrib.datatemplates  # BSD License
+stestr  # Apache-2.0
+sushy  # Apache-2.0
+testrepository  # Apache-2.0/BSD
+testresources  # Apache-2.0/BSD
+testscenarios  # Apache-2.0/BSD
+testtools  # MIT
+trollius;python_version=='2.7'  # Apache-2.0
+ujson  # BSD
+unittest2  # BSD
+virtualbmc  # Apache-2.0
+virtualenv  # MIT
+vmware-nsxlib  # Apache-2.0
+wrapt  # BSD License
+WebTest  # MIT
+Werkzeug  # BSD License
+whereto  # Apache-2.0
+xmltodict  # MIT
+wsgi-intercept  # MIT License
+xvfbwrapper  #license: MIT
+zake  # Apache-2.0
+zuul-sphinx  # Apache-2.0
+shade  # Apache-2.0
+sadisplay  # BSD
+
+# Indirect dependencies that need blocking
+daiquiri
+
+# NOTE(dhellmann): We need to include this package for testing the
+# release jobs that propose constraint updates, even though it is not
+# a real requirement of any of our software.
+openstack-release-test
+
+# NOTE(snapiri): This is required for Dragonflow topology visualization
+skydive-client  # Apache-2.0
