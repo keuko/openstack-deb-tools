@@ -1,0 +1,84 @@
+abclient PY2_PACKAGE_NOT_AVAILABLE
+ansible_runner PY2_PACKAGE_NOT_AVAILABLE
+apscheduler python-apscheduler
+betamax_matchers PY2_PACKAGE_NOT_AVAILABLE
+dnspython3 python-dnspython
+dogtag_pki PY2_PACKAGE_NOT_AVAILABLE
+faker python-fake-factory
+flask_keystone PY2_PACKAGE_NOT_AVAILABLE
+flask_oslolog PY2_PACKAGE_NOT_AVAILABLE
+fortiosclient PY2_PACKAGE_NOT_AVAILABLE
+heat_translator PY2_PACKAGE_NOT_AVAILABLE
+instack_undercloud PY2_PACKAGE_NOT_AVAILABLE
+jsonmodels PY2_PACKAGE_NOT_AVAILABLE
+krest PY2_PACKAGE_NOT_AVAILABLE
+kuryr_lib PY2_PACKAGE_NOT_AVAILABLE
+pylev PY2_PACKAGE_NOT_AVAILABLE
+metalsmith PY2_PACKAGE_NOT_AVAILABLE
+monasca_common PY2_PACKAGE_NOT_AVAILABLE
+mypy PY2_PACKAGE_NOT_AVAILABLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+networking_bagpipe PY2_PACKAGE_NOT_AVAILABLE !!!!!!!!!!!!!!!!!!!!!!!!!!!
+networking_bgpvpn PY2_PACKAGE_NOT_AVAILABLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+networking_odl PY2_PACKAGE_NOT_AVAILABLE
+networking_sfc PY2_PACKAGE_NOT_AVAILABLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+neutron_dynamic_routing python-neutron-dynamic-routing
+neutron_fwaas python-neutron-fwaas
+neutron_vpnaas python-neutron-vpnaas
+notifier PY2_PACKAGE_NOT_AVAILABLE
+openshift PY2_PACKAGE_NOT_AVAILABLE
+osc_placement PY2_PACKAGE_NOT_AVAILABLE
+os_dpm PY2_PACKAGE_NOT_AVAILABLE
+paunch PY2_PACKAGE_NOT_AVAILABLE
+pifpaf PY2_PACKAGE_NOT_AVAILABLE
+PrettyTable python-prettytable
+PyECLib python-pyeclib
+pykafka PY2_PACKAGE_NOT_AVAILABLE
+pykmip python-pykmip
+tap_as_a_service PY2_PACKAGE_NOT_AVAILABLE
+etcd3 PY2_PACKAGE_NOT_AVAILABLE
+crc16 PY2_PACKAGE_NOT_AVAILABLE
+pyzabbix PY2_PACKAGE_NOT_AVAILABLE
+zVMCloudConnector PY2_PACKAGE_NOT_AVAILABLE
+opentracing PY2_PACKAGE_NOT_AVAILABLE
+jaeger_client PY2_PACKAGE_NOT_AVAILABLE
+tricircleclient PY2_PACKAGE_NOT_AVAILABLE
+python_blazarclient PY2_PACKAGE_NOT_AVAILABLE
+python_freezerclient not available
+python_hnvclient not available
+python_kingbirdclient not available
+python_masakariclient not available
+python_qinlingclient not available
+python_rsdclient not available
+python_smaugclient not available
+python_solumclient not available
+python_vitrageclient not available
+tripleo_common not available
+PyMI not available
+wmi not available
+xstatic_angular_uuid not available
+xstatic_angular_vis not available
+xstatic_filesaver not available
+xstatic_js_yaml not available
+xstatic_json2yaml not available
+XenAPI not available
+XStatic_angular_ui_router not available
+zhmcclient not available
+couchdb not available
+fixtures_git not available
+nodeenv not available
+python_consul not available
+python_pytun not available
+sphinx not available
+sphinxcontrib_apidoc not available
+sphinxcontrib_fulltoc not available
+sphinx_feature_classification not available
+sphinxmark not available
+sphinxcontrib.datatemplates not available
+virtualbmc not available
+vmware_nsxlib not available
+whereto not available
+zuul_sphinx not available
+sadisplay not available
+daiquiri not available
+openstack_release_test not available
+skydive_client not available
