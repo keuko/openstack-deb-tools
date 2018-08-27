@@ -3,11 +3,11 @@
 import requirements
 import re
 import os
-import shutil
 import tempfile
 import gzip
 import urllib.request
 import shutil
+import apt
 
 pwd = os.getcwd()
 req_file = "{}/test/requirements.txt".format(pwd)
@@ -70,51 +70,75 @@ class Package:
         else:
             return "!!! Python3 Deb Package for {} not available".format(self.name)
 
+    def fillAptVersions(self):
+        cache = apt.cache.Cache()
+        package = cache['nova-common']
+        print(package.__getattribute__('CurrentVer'))
+        # for i in package.versions:
+        #     print("{} => {}".format(i.version, i.origins[0].archive))
+
+
+
     def getPy2DebPkgVersionStable(self):
-        stable_url = "http://deb.debian.org/debian/dists/stable/main/binary-all/Packages.gz"
-        file = "/tmp/stable_Packages.gz"
-        with urllib.request.urlopen(stable_url) as response, open(file, 'wb') as out_file:
-            shutil.copyfileobj(response, out_file)
-        with gzip.open(file, mode="rt") as f:
-            for line in f:
-                res = re.match("^Package:\ {}.*".format(self.py2_deb_pkg), line)
-                if res:
-                    for i in range(10):
-                        line_to_search = f.__next__()
-                        res_ver = re.match("^Version: .*$", line_to_search)
-                        if res_ver:
-                            self.py2_deb_pkg_stable_ver = res_ver.string.strip().split()[1]
-                            return self.py2_deb_pkg_stable_ver.split("-")[0]
+        # cache = apt.cache.Cache()
+        # package = cache[self.name]
+        # for i in package.versions:
+        #     a = i.origins
+        #     print(i.origins[0].archive)
+        #
+        # print(package)
+        # ahoj = package.versions
+        # version = package.versions.get("version")
+        # print(version)
+        pass
 
     def getPy3DebPkgVersionStable(self):
-        stable_url = "http://deb.debian.org/debian/dists/stable/main/binary-all/Packages.gz"
-        file = "/tmp/stable_Packages.gz"
-        with urllib.request.urlopen(stable_url) as response, open(file, 'wb') as out_file:
-            shutil.copyfileobj(response, out_file)
-        with gzip.open(file, mode="rt") as f:
-            for line in f:
-                res = re.match("^Package:\ {}$".format(self.py3_deb_pkg), line)
-                if res:
-                    for i in range(10):
-                        line_to_search = f.__next__()
-                        res_ver = re.match("^Version: .*$", line_to_search)
-                        if res_ver:
-                            self.py3_deb_pkg_stable_ver = res_ver.string.strip().split()[1]
-                            return self.py3_deb_pkg_stable_ver.split("-")[0]
+        # stable_url = "http://deb.debian.org/debian/dists/stable/main/binary-all/Packages.gz"
+        # file = "/tmp/stable_Packages.gz"
+        # with urllib.request.urlopen(stable_url) as response, open(file, 'wb') as out_file:
+        #     shutil.copyfileobj(response, out_file)
+        # with gzip.open(file, mode="rt") as f:
+        #     for line in f:
+        #         res = re.match("^Package:\ {}$".format(self.py3_deb_pkg), line)
+        #         if res:
+        #             for i in range(10):
+        #                 line_to_search = f.__next__()
+        #                 res_ver = re.match("^Version: .*$", line_to_search)
+        #                 if res_ver:
+        #                     self.py3_deb_pkg_stable_ver = res_ver.string.strip().split()[1]
+        #                     return self.py3_deb_pkg_stable_ver.split("-")[0]
+        pass
 
 
+#
+#
+# import apt
+# package_name = 'nova-common'
+# cache = apt.cache.Cache()
+# package = cache[package_name]
+# print(package.versions)
+# for i in package.versions:
+#     a = i.origins
+#     print(i.origins[0].archive)
 
-
-
-
-
-package = 'tenacity'
+# print(package)
+# ahoj = package.versions
+# version = package.versions.get("version")
+# print(version)
+# candidate = package.versions.get(version)
+# package.candidate = candidate
+# #package.mark_install()
+# #cache.commit()
+# print(package.candidate
+package = 'nova'
 version = []
 p = Package(package, version)
 print(p.getPy2DebPkgName())
 print(p.getPy3DebPkgName())
 print(p.getPy2DebPkgVersionStable())
 print(p.getPy3DebPkgVersionStable())
+p.fillAptVersions()
+pica = 'rit'
 
 
     #print(p.getPy2DebPkgName())
